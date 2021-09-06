@@ -1,5 +1,7 @@
-export default function PokemonList() {
+import React from 'react';
 
+
+export default function Home() {
     return (
         <>
             <label htmlFor="pokemonpic" id="pokemonpic"></label>
