@@ -1,4 +1,4 @@
-import React, { images } from 'react';
+import React from 'react';
 import pokedex from '../images/pokedex.png';
 
 export default function Header() {

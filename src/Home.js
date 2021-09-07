@@ -1,13 +1,13 @@
 import React from 'react';
 import './dexStyling.css';
-import Header from './components/Header'
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 
 export default function Home() {
     return (
         <>
         <Header />
-        <p>This is the Home page</p>
         </>
     )
 
