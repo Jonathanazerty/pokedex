@@ -4,7 +4,6 @@ import Home from './Home';
 
 
 const App = () => {
-
   return (
     <Router>
         <Link to="/"><button className="btn btn-outline-light col-12 p-2" type="button"> Homepage </button></Link>
