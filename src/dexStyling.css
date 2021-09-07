@@ -489,9 +489,19 @@ background: #8D6855;
 background: #F9AEFF;
 }
 
+@media only screen and (min-width: 1200px) {
+    body {
+      background-color: pink;
+    }
+}
+@media only screen and (max-width: 1199px) {
+    body {
+      background-color: lightskyblue;
+    }
+}
+
 @media only screen and (max-width: 360px) {
     body {
       background-color: lightblue;
     }
-    
 }
