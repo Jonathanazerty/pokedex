@@ -5,7 +5,8 @@ export default function Header() {
     return (
         <>
         <div>
-            <center><p>Jonathan and Dennis's </p></center>
+            <center><p></p></center>
+            <div className="text-center">Jonathan and Dennis's </div>
             <img src ={pokedex} ></img>
         </div>
         </>
