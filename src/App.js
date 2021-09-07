@@ -4,18 +4,6 @@ import Home from './Home';
 
 
 const App = () => {
-  // const [allPokemons, setAllPokemons] = useState('https://pokeapi.co/api/v2/pokemon?limit=100');
-  
-  // const getAllPokemons = async () => {
-  //   const res = await fetch(allPokemons)
-  //   const data = await res.json()
-  //   console.log(data);
-  // }
-
-  // useEffect(() => {
-  //   getAllPokemons()
-  // }, [])
-
 
   return (
     <Router>
