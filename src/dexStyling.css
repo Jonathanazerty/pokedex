@@ -491,17 +491,17 @@ background: #F9AEFF;
 
 @media only screen and (min-width: 1200px) {
     body {
-      background-color: pink;
+      background-color: lightblue;
     }
 }
 @media only screen and (max-width: 1199px) {
     body {
-      background-color: lightskyblue;
+      background-color: pink;
     }
 }
 
 @media only screen and (max-width: 360px) {
     body {
-      background-color: lightblue;
+      background-color: lightskyblue;
     }
 }
