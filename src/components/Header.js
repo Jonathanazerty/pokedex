@@ -7,7 +7,7 @@ export default function Header() {
         <div>
             <center><p></p></center>
             <div className="text-center">Jonathan and Dennis's </div>
-            <img src ={pokedex} ></img>
+            <img src ={pokedex} className="img-fluid" alt="Responsive image"></img>
         </div>
         </>
     )
