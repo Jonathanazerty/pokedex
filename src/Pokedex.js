@@ -1,9 +1,12 @@
 import React from 'react';
+import Header from './components/Header';
+
 
 
 export default function Pokedex() {
     return (
         <>
+        <center><Header /></center>
         <div className = "pokedex">
             <div className = "left-container">
                 <div className ="left-container__top-section">
