@@ -488,3 +488,10 @@ background: #8D6855;
 .fairy {
 background: #F9AEFF;
 }
+
+@media only screen and (max-width: 360px) {
+    body {
+      background-color: lightblue;
+    }
+    
+}
