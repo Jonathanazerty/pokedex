@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import Pokedex from './Pokedex';
 import {Home} from './Home';
+import { Details } from '.';
 
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
         <Link to="/pokedex"><button className="btn btn-outline-light col-12 p-2" type="button"> Pokedex</button></Link>
       <Switch>
         <Route path="/" exact component={Home} />
+        <Route path="/Details" component={Details} />
         <Route path="/pokedex" component={Pokedex}/>
       </Switch>
     </Router>
