@@ -5,44 +5,38 @@ import Footer from './components/Footer';
 import { Link } from 'react-router-dom'
 import axios from 'axios';
 
-
-
 const Home = () => {
     
     const [pokemon, setPokemon] = useState([]);
+    //Name of Pokemon
     useEffect(()=> {
         axios.get('https://pokeapi.co/api/v2/pokemon?limit=100')
-            .then(function (res) {
-                setPokemon(res.data.results)
+            .then(function (response) {
+                setPokemon(response.data.results)
                 // console.log(res.data.results)
             })
-            .catch(function (err) {
+            .catch(function (error) {
                 // handle error
-                console.log(err);
+                console.log(error);
             })
 
     },[]);
-
-    
-
-    // const [pokemon, setPokemon] = useState([]);
-    // const urlPokemon = 'https://pokeapi.co/api/v2/pokemon?limit=100';
-
-    // useEffect((pokemon) => {
-    //     async function fetchData() {
-    //         let response = await fetch (urlPokemon);
-    //         let pokemonData = await response.json();
-    //         console.log(pokemonData.results);
-    //     }
-    //     fetchData();
-    // }, []);
 
     return (
         <>
         <Header />
         <div>
             {pokemon.map((item, index) => {
-                    return <li key={index}><Link to={"pokemon?id="+index+"&name="+item.name} details={item.url} >{item.name}</Link></li>
+                    return (
+                        <>
+                            <ol>
+                                <li key={index}>
+                                    <Link to={"?id="+index+"&name="+item.name} details={item.url} >{item.name}</Link>
+                                    <img src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/"+ index +".svg"} alt=""></img>
+                                </li>
+                            </ol>
+                        </>
+                    ) 
                 })}
         </div>
         <Footer />
