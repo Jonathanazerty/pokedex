@@ -87,16 +87,6 @@ export default function Pokedex() {
                         <div class="list-item"></div>
                         <div class="list-item"></div>
                         <div class="list-item"></div>
-                        <div class="list-item"></div>
-                        <div class="list-item"></div>
-                        <div class="list-item"></div>
-                        <div class="list-item"></div>
-                        <div class="list-item"></div>
-                        <div class="list-item"></div>
-                        <div class="list-item"></div>
-                        <div class="list-item"></div>
-                        <div class="list-item"></div>
-                        <div class="list-item"></div>
                     </div>
                 </div>
                 <input type ="text" class = "findPoke" id = "findPoke" name ="f"></input>
