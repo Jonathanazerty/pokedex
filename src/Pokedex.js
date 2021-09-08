@@ -5,6 +5,9 @@ import Footer from './components/Footer'
 
 
 export default function Pokedex() {
+
+    
+
     return (
         <>
         <center><Header /></center>
