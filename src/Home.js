@@ -24,6 +24,7 @@ const Home = () => {
 
     },[]);
 
+    
     return (
         <div>
         <Header />
@@ -45,5 +46,4 @@ const Home = () => {
         </div>
     )
 }
-
 export {Home};

@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer'
 import axios from 'axios';
+import Dexstructure from './components/Dexstructure';
 
 
 
@@ -137,6 +138,7 @@ export default function Pokedex() {
                 </div>
             </div>
         </div>
+       <Dexstructure />
         <center><Footer /></center>
         </>
     )
