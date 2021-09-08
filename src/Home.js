@@ -24,9 +24,8 @@ const Home = () => {
 
     },[]);
 
+    
     return (
-        <>
-        <Header />
         <div>
             <ol>
             {pokemon.map((item, index) => {
@@ -44,7 +43,7 @@ const Home = () => {
         <Header />
         <Footer />
         </>
+        </div>
     )
 }
-
 export {Home};

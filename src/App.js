@@ -15,7 +15,6 @@ const App = () => {
         <Route path="/pokedex" component={Pokedex}/>
       </Switch>
     </Router>
-    
   )
 }
 export default App;
