@@ -10,14 +10,14 @@ const Details = () => {
         console.log(id)
         // console.log(name)
         axios.get("https://pokeapi.co/api/v2/pokemon/"+id+"/")
-            .then(function (res) {
-                console.log(res)
-                setDetails(res.data.abilities)
-                // console.log(res.data.abilities)
+            .then(function (response) {
+                console.log(response)
+                setDetails(response.data.abilities)
+                // console.log(response.data.abilities)
             })
-            .catch(function (err) {
+            .catch(function (error) {
                 // handle error
-                console.log(err);
+                console.log(error);
             })
     }, [id])
 
@@ -27,7 +27,7 @@ const Details = () => {
         <>
             <div>
                 {details.map((item, index) => {
-                    return <p key={index}>{item.ability.name}</p>
+                    return <li key={index}>{item.ability.name}</li>
                 })}
             </div>
         </>
