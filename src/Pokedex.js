@@ -49,9 +49,9 @@ export default function Pokedex() {
                                             {pokemon.map((item, index) => {
                                                     return (
                                                         <>
-                                                                <li key={index}>
-                                                                    <p className='pokeName'>{item.name}</p>
-                                                                </li>
+                                                            <li key={index}>
+                                                                <p className='pokeName'>{item.name}</p>
+                                                            </li>
                                                         </>
                                                     ) 
                                                 })}
@@ -138,7 +138,6 @@ export default function Pokedex() {
                 </div>
             </div>
         </div>
-       <Dexstructure />
         <center><Footer /></center>
         </>
     )
