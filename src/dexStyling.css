@@ -505,3 +505,21 @@ background: #F9AEFF;
       background-color: lightskyblue;
     }
 }
+
+/* HOME PAGE */
+
+.nameHome, ol li {
+  margin-top: 70px;
+  color:red;
+  font-size: x-large;
+}
+
+.abilitiesDetails {
+  margin-top: 70px;
+  color:red;
+  font-size: x-large;
+}
+
+.imageHome {
+  margin-left: 100px;
+}

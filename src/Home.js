@@ -26,20 +26,20 @@ const Home = () => {
 
     return (
         <div>
+        <Header />
             <ol>
             {pokemon.map((item, index) => {
                     return (
                         <>
                                 <li key={index}>
-                                    <Link to={"Details?id="+(index+1)+"&name="+item.name} details={item.url} >{item.name}</Link>
-                                    <img src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/"+ (index+1) +".svg"} alt=""></img>
+                                    <Link className="nameHome" to={"Details?id="+(index+1)+"&name="+item.name} details={item.url} >{item.name}</Link>
+                                    <img className="imageHome"src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/"+ (index+1) +".svg"} alt=""></img>
                                 </li>
                         </>
                     ) 
                 })}
             </ol>
         <>
-        <Header />
         <Footer />
         </>
         </div>

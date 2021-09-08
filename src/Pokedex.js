@@ -1,12 +1,28 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer'
+import axios from 'axios';
 
 
 
 export default function Pokedex() {
 
-    
+    const [pokemon, setPokemon] = useState([]);
+
+    //Name of Pokemon
+    useEffect(()=> {
+        axios.get('https://pokeapi.co/api/v2/pokemon?limit=100')
+            .then(function (response) {
+                // console.log(response)
+                setPokemon(response.data.results)
+                // console.log(response.data.results)
+            })
+            .catch(function (error) {
+                // handle error
+                console.log(error);
+            })
+
+    },[]);
 
     return (
         <>
@@ -27,7 +43,19 @@ export default function Pokedex() {
                             <div className ="main-section__black">
                                 <div className ="main-screen hide">
                                     <div className ="screen__header">
-                                        <span className ="poke-name"></span>
+                                        <span className ="poke-name">
+                                        <ol>
+                                            {pokemon.map((item, index) => {
+                                                    return (
+                                                        <>
+                                                                <li key={index}>
+                                                                    <p className='pokeName'>{item.name}</p>
+                                                                </li>
+                                                        </>
+                                                    ) 
+                                                })}
+                                            </ol>
+                                        </span>
                                         <span className ="poke-id"></span>
                                     </div>
                                     <div className ="screen__image">
