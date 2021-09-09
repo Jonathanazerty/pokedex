@@ -491,7 +491,7 @@ background: #F9AEFF;
 
 @media only screen and (min-width: 1200px) {
     body {
-      background-color: lightblue;
+      background-color: rgb(2, 4, 109);
     }
 }
 @media only screen and (max-width: 1199px) {
@@ -510,16 +510,82 @@ background: #F9AEFF;
 
 .nameHome, ol li {
   margin-top: 70px;
-  color:red;
+  color:rgb(252, 252, 109);
+  text-shadow: 0 0 10px  rgb(163, 163, 41), 0 0 10px rgb(163, 163, 41);
   font-size: x-large;
-}
-
-.abilitiesDetails {
-  margin-top: 70px;
-  color:red;
-  font-size: x-large;
+  font-weight: bold;
 }
 
 .imageHome {
   margin-left: 100px;
+}
+
+.header, .footer {
+  color:rgb(250, 58, 90);
+  text-shadow: 0 0 10px  rgb(163, 163, 41), 0 0 10px rgb(163, 163, 41);
+}
+
+.card {
+  text-align: center;
+  margin-top: 50px;
+  padding: 40px;
+  color:blue;
+  background-color:  rgba(248, 248, 4);
+  border-radius: 10%;
+  border: none;
+  box-shadow: 5px 5px 5px rgb(163, 163, 41);
+}
+
+/* .card:hover{
+  transform: scale(1.2);
+} */
+
+.card-header{
+  color:yellow;
+  background-color:  blue;
+  border-radius: 10%;
+}
+
+.card-text {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+img {
+  padding: 10px
+}
+
+/* .poke-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-between;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+} */
+
+.poke-container {
+  grid-template-columns: 1fx 1fr 1fr 1fr;
+  grid-template-rows: 80px auto 80px; 
+  column-gap: 10px;
+  row-gap: 15px;
+}
+
+.home {
+  justify-content: center;
+  text-align: center;
+}
+
+.btn-outline-light {
+  font-weight: bold;
+  color:blue;
+  background-color:  rgb(253, 253, 71, 0.9);
+  border: none;
+  margin: 2px;
+  
+}
+
+.btn-outline-light:hover {
+  transform: scale(1.1);
+  background-color:  pink;
 }
