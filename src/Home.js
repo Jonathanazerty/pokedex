@@ -32,12 +32,12 @@ const Home = () => {
     return (
         <div class="home">
         <Header />
-        <div class="poke-container">
+        <div className="card-home">
                 <ol>
                 {pokemon.map((item, index) => {
                         return (
                             <>
-                            <div class="card-home">
+                            <div class="card-body-home">
                                 <div className="card-header-home" class="card-header-home">{name}</div>
                                 <div className="card-body-home">
                                     <li key={index}> 
