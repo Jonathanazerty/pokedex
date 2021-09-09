@@ -2,7 +2,6 @@ import React from 'react'
 
 export default function Rightcontainer() {
     return (
-        <div>
             <div className ="right-container">
                 <div className ="right-container__black">
                     <div className ="right-container__screen">
@@ -40,6 +39,5 @@ export default function Rightcontainer() {
                     <div className ="right-button">Next</div>
                 </div>
             </div>
-        </div>
     )
 }

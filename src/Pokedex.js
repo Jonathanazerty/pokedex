@@ -32,7 +32,6 @@ export default function Pokedex() {
         <center><Header /></center>
         <div className = "pokedex">
             <Leftcontainer />
-            <Rightcontainer />
         </div>
         <center><Footer /></center>
         </>
