@@ -4,8 +4,10 @@ import axios from "axios";
 
 const Details = () => {
     const [details, setDetails] = useState([])
-    // const [weight, setWeight] = useState([])
+    const [name, setName] = useState([])
+    const [img, setImg] = useState([])
     const id = new URLSearchParams(useLocation().search).get('id');
+    const pokeName = new URLSearchParams(useLocation().search).get('name');
 
     useEffect(() => {
         console.log(id)
@@ -14,6 +16,8 @@ const Details = () => {
             .then(function (response) {
                 // console.log(response)
                 setDetails(response.data.abilities)
+                setName(pokeName)
+                setImg(response.data.sprites.other.dream_world.front_default)
                 // console.log(response.data)
                 // setWeight(response.data)
                 // // console.log(response.data.abilities)
@@ -23,16 +27,22 @@ const Details = () => {
                 // handle error
                 console.log(error);
             })
-    }, [id])
+    }, [id, pokeName])
 
     // console.log(details)
 
     return (
         <>
-            <div>
-                {details.map((item, index) => {
-                    return <li className="abilitiesDetails" key={index}>{item.ability.name}</li>
-                })}
+            <div class="card">
+                <h1 className="card-header" class="card-header">{name}</h1>
+                <div className="card-body">
+                <div className="card-text">
+                    <img src={img} alt=""/>
+                    {details.map((item, index) => {
+                        return <p key={index}>{item.ability.name}</p>
+                    })} 
+                </div>
+                </div>
             </div>
         </>
     );
