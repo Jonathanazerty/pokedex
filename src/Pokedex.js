@@ -3,6 +3,8 @@ import Header from './components/Header';
 import Footer from './components/Footer'
 import axios from 'axios';
 import Dexstructure from './components/Dexstructure';
+import Leftcontainer from './components/Leftcontainer';
+import Rightcontainer from './components/Rightcontainer';
 
 
 
@@ -29,7 +31,8 @@ export default function Pokedex() {
         <>
         <center><Header /></center>
         <div className = "pokedex">
-            
+            <Leftcontainer />
+            <Rightcontainer />
         </div>
         <center><Footer /></center>
         </>

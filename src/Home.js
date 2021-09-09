@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './dexStyling.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 const Home = () => {
@@ -32,10 +32,10 @@ const Home = () => {
             {pokemon.map((item, index) => {
                     return (
                         <>
-                                <li key={index}>
-                                    <Link className="nameHome" to={"Details?id="+(index+1)+"&name="+item.name} details={item.url} >{item.name}</Link>
-                                    <img className="imageHome"src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/"+ (index+1) +".svg"} alt=""></img>
-                                </li>
+                            <li key={index}>
+                                <Link className="nameHome" to={"Details?id="+(index+1)+"&name="+item.name} details={item.url} >{item.name}</Link>
+                                <img className="imageHome"src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/"+ (index+1) +".svg"} alt=""></img>
+                            </li>
                         </>
                     ) 
                 })}

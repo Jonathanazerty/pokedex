@@ -1,6 +1,26 @@
-import React from 'react'
+import React from 'react';
+import axios from 'axios';
+import {useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Leftcontainer() {
+    const [pokemon, setPokemon] = useState([]);
+
+    //Name of Pokemon
+    useEffect(()=> {
+        axios.get('https://pokeapi.co/api/v2/pokemon?limit=100')
+            .then(function (response) {
+                // console.log(response)
+                setPokemon(response.data.results)
+                // console.log(response.data.results)
+            })
+            .catch(function (error) {
+                // handle error
+                console.log(error);
+            })
+
+    },[]);
+    
     return (
         <div>
             <div className = "left-container">
@@ -19,23 +39,22 @@ export default function Leftcontainer() {
                                 <div className ="main-screen hide">
                                     <div className ="screen__header">
                                         <span className ="poke-name">
-                                        <ol>
-                                            {pokemon.map((item, index) => {
-                                                    return (
-                                                        <>
-                                                            <li key={index}>
-                                                                <p className='pokeName'>{item.name}</p>
-                                                            </li>
-                                                        </>
-                                                    ) 
-                                                })}
-                                            </ol>
                                         </span>
                                         <span className ="poke-id"></span>
                                     </div>
                                     <div className ="screen__image">
-                                        <img src ="" className = "poke-front-image" alt = "front"></img>
-                                        <img src ="" className = "poke-back-image" alt = "back"></img>
+                                    <ol>
+                                    {pokemon.map((item, index) => {
+                                            return (
+                                                <>
+                                                    <li key={index}>
+                                                        <Link className="nameHome" to={"Details?id="+(index+1)+"&name="+item.name} details={item.url} >{item.name}</Link>
+                                                        <img className="imageHome"src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/"+ (index+1) +".svg"} alt=""></img>
+                                                    </li>
+                                                </>
+                                            ) 
+                                        })}
+                                    </ol>
                                     </div>
                                     <div class="screen__description">
                                         <div className ="stats__types">
