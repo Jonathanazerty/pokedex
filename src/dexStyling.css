@@ -491,7 +491,7 @@ background: #F9AEFF;
 
 @media only screen and (min-width: 1200px) {
     body {
-      background-color: rgb(2, 4, 109);
+      background-color: rgb(110, 112, 240);
     }
 }
 @media only screen and (max-width: 1199px) {
@@ -582,8 +582,8 @@ img {
 
 .btn-outline-light {
   font-weight: bold;
-  color:blue;
-  background-color:  rgb(253, 253, 71, 0.9);
+  color:rgba(255, 84, 226, 0.782);
+  background-color:  rgba(71, 211, 253, 0.501);
   border: none;
   margin: 2px;
   font-family: 'Press Start 2P', cursive;
