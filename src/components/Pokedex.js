@@ -14,9 +14,7 @@ export default function Pokedex() {
     useEffect(()=> {
         axios.get('https://pokeapi.co/api/v2/pokemon?limit=100')
             .then(function (response) {
-                // console.log(response)
                 setPokemon(response.data.results)
-                // console.log(response.data.results)
             })
             .catch(function (error) {
                 // handle error
