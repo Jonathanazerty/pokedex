@@ -14,14 +14,8 @@ const Leftcontainer = () => {
     useEffect(() => {
         axios.get(url + id)
             .then(function (response) {
-                console.log("response")
-                console.log(response)
                 setDetails(response.data.moves)
                 setImg(response.data.sprites.other.dream_world.front_default)
-                //console.log("details")
-
-                console.log(response.data.moves)
-
             })
             .catch(function (error) {
                 // handle error
@@ -107,14 +101,7 @@ const Leftcontainer = () => {
                 <div className="right-container">
                     <div className="right-container__black">
                         <div className="right-container__screen">
-                            {details.map((detail, index) => {
-                                if (index <= 3) {
-                                    console.log(detail.move.name)
-                                    return (
-                                        <div className="list-move">{detail.move.name}</div>
-                                    );
-                                }
-                            })} 
+                        {details.map((detail, index) => index <= 3 && <div className="list-move" >{detail.move.name}</div>)};
                         </div>
                         <div className="right-container__screen">
                             <div className="list-item"></div>
@@ -141,79 +128,3 @@ const Leftcontainer = () => {
 }
 
 export default Leftcontainer;
-/*
-    return (
-        <>
-            <div>
-                <div className = "left-container">
-                    <div className ="left-container__top-section">
-                        <div className ="top-section__blue"></div>
-                        <div className ="top-section__small-buttons">
-                            <div className ="top-section__red"></div>
-                            <div className ="top-section__yellow"></div>
-                            <div className ="top-section__green"></div>
-                        </div>
-                    </div>
-                    <div className ="left-container__main-section-container">
-                        <div className ="left-container__main-section">
-                            <div className ="main-section__white">
-                                <div className ="main-section__black">
-                                    <div className="card-text">
-                                        <img src={img} alt=""/>
-                                        {details.map((item, index) => {
-                                            return <p key={index}>{item.ability.name}</p>
-                                        })}
-                                    </div>
-                                    <div className ="main-screen hide">
-                                        <div className ="screen__header">
-                                            <span className ="poke-name">
-                                            </span>
-                                            <span className ="poke-id"></span>
-                                        </div>
-                                        <div className ="screen__image">
-                                        <img src={img} alt=""/>
-                                            {details.map((item, index) => {
-                                                return <p key={index}>{item.ability.name}</p>
-                                            })}
-                                        </div>
-                                        <div class="screen__description">
-                                            <div className ="stats__types">
-                                                <span className ="poke-type-one"></span>
-                                                <span className ="poke-type-two"></span>
-                                            </div>
-                                            <div className ="screen__stats">
-                                                <p className = "stats__weight">
-                                                    weight: <span className ="poke-weight"></span>
-                                                </p>
-                                                <p className = "stats__height">
-                                                    height: <span className ="poke-height"></span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className = "left-container__controllers">
-                                <div className ="controllers__d-pad">
-                                    <div className ="d-pad__cell top"></div>
-                                    <button class="d-pad__cell left "></button>
-                                    <div class="d-pad__cell middle"></div>
-                                    <button class="d-pad__cell right"></button>
-                                    <div class="d-pad__cell bottom"></div>
-                                </div>
-                                <div className ="controllers__buttons">
-                                    <button id ="bButton" name ="bButton" className ="buttons__button">B</button>
-                                    <button id ="aButton" name ="aButton" className ="buttons__button">A</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div className ="left-container__right">
-                            <div className ="left-container__hinge"></div>
-                            <div className ="left-container__hinge"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </>
-    );
-}*/
