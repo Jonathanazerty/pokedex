@@ -21,7 +21,7 @@ const Leftcontainer = () => {
                 // handle error
                 console.log(error);
             })
-    }, [id]);
+    }, [url, id]);
     console.log(details)
 
 
@@ -50,11 +50,11 @@ const Leftcontainer = () => {
                             <div className="main-section__white">
                                 <div className="main-section__black">
                                     <div className="card-text">
-                                        <img src={img} alt="" />
+                                        <img src={img} class="img-fluid" alt="Responsive"/>
                                     </div>
                                     <div className="main-screen hide">
                                         <div className="screen__header">
-                                            <span className="poke-name">{name}</span>
+                                            <span className="poke-name" >{name}</span>
                                             <span className="poke-id"></span>
                                         </div>
                                         <div className="screen__image">
