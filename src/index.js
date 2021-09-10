@@ -11,7 +11,7 @@ export {
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <center><App /></center>
   </React.StrictMode>,
   document.getElementById('root')
 );
