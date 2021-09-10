@@ -14,7 +14,7 @@ const Home = () => {
 
     //Name of Pokemon
     useEffect(()=> {
-        axios.get('https://pokeapi.co/api/v2/pokemon?limit=100')
+        axios.get('https://pokeapi.co/api/v2/pokemon?limit=151')
             .then(function (response) {
                 setPokemon(response.data.results)
                 setName(pokemonName)
