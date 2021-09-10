@@ -527,7 +527,7 @@ background: #F9AEFF;
 
 .header, .footer {
   font-size: x-large;
-  color:rgb(253, 106, 130);
+  color:rgb(153, 1, 153);
   text-shadow: 0 0 20px  rgb(252, 252, 4), 0 0 20px rgb(252, 252, 4);
   font-family: 'Press Start 2P', cursive;
 }
