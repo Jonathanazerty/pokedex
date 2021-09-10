@@ -11,27 +11,16 @@ const Details = () => {
     const pokeName = new URLSearchParams(useLocation().search).get('name');
 
     useEffect(() => {
-        console.log(id)
-        // console.log(name)
         axios.get("https://pokeapi.co/api/v2/pokemon/"+id+"/")
             .then(function (response) {
-                // console.log(response)
                 setDetails(response.data.abilities)
                 setName(pokeName)
                 setImg(response.data.sprites.other.dream_world.front_default)
                 setType(response.data.types)
-                // console.log(response.data)
-                // setWeight(response.data)
-                // // console.log(response.data.abilities)
-                // console.log(response.data.weight)
             })
             .catch(function (error) {
-                // handle error
-                console.log(error);
             })
     }, [id, pokeName])
-
-    // console.log(details)
 
     return (
         <>
