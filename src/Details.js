@@ -28,7 +28,7 @@ const Details = () => {
                 <h1 className="card-header" class="card-header">{name}</h1>
                 <div className="card-body">
                 <div className="card-img">
-                    <img src={img} alt=""/>
+                    <img src={img} class="img-fluid" alt="Responsive"/>
                 </div>
                 <table>
                     <tr>
