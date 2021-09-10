@@ -1,12 +1,12 @@
 # Pokédex in REACT, group-project
  
-    [DEPLOYED ON NETLIFY :](https://pokedex-dennis-jonathan.netlify.app/)
+[DEPLOYED ON NETLIFY :](https://pokedex-dennis-jonathan.netlify.app/)
 
-    Well hello there, we present to you proudly, a modern React Pokedex application ! 
-    This a group project by Jonathan and myself (Dennis), learning the most important principles in React, such as Components, Hooks, States, Effects, Router-DOM etc...
+Well hello there, we present to you proudly, a modern React Pokedex application ! 
+This a group project by Jonathan and myself (Dennis), learning the most important principles in React, such as Components, Hooks, States, Effects, Router-DOM etc...
 
-    It was very hard to grasp, but holy moly did we have fun. 
-    We highly suggest to try it yourself ! Below you find an overview on how we approached this project's structure. Enjoy !
+It was very hard to grasp, but holy moly did we have fun. 
+We highly suggest to try it yourself ! Below you find an overview on how we approached this project's structure. Enjoy !
 
 ## Components & structure used
     - public 
