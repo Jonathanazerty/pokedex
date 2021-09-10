@@ -25,7 +25,6 @@ const Leftcontainer = () => {
                 console.log(error);
             })
     }, [url, id, pokeName]);
-    console.log(details)
 
 
     const clickHandlerForward = (j) => {
