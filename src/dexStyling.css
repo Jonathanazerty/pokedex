@@ -496,11 +496,11 @@ background: #F9AEFF;
 }
 @media only screen and (max-width: 1199px) {
     body {
-      background-color: pink;
+      background-color: red;
     }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 624px) {
     body {
       background-color: lightskyblue;
     }
@@ -514,6 +514,11 @@ background: #F9AEFF;
   text-shadow: 0 0 10px  rgb(163, 163, 41), 0 0 10px rgb(163, 163, 41);
   font-size: x-large;
   font-weight: bold;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.nameHome, ol li:hover {
+  transform: scale(1.2);
 }
 
 .imageHome {
@@ -521,8 +526,10 @@ background: #F9AEFF;
 }
 
 .header, .footer {
-  color:rgb(250, 58, 90);
-  text-shadow: 0 0 10px  rgb(163, 163, 41), 0 0 10px rgb(163, 163, 41);
+  font-size: x-large;
+  color:rgb(253, 106, 130);
+  text-shadow: 0 0 20px  rgb(252, 252, 4), 0 0 20px rgb(252, 252, 4);
+  font-family: 'Press Start 2P', cursive;
 }
 
 .card {
@@ -530,25 +537,42 @@ background: #F9AEFF;
   margin-top: 50px;
   padding: 40px;
   color:blue;
-  background-color:  rgba(248, 248, 4);
+  background-color:  pink;
   border-radius: 10%;
   border: none;
-  box-shadow: 5px 5px 5px rgb(163, 163, 41);
+  box-shadow: 10px 10px 10px rgb(252, 73, 103);
+  font-family: 'Press Start 2P', cursive;
 }
 
 /* .card:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
 } */
 
 .card-header{
   color:yellow;
-  background-color:  blue;
-  border-radius: 10%;
+  background-color:  rgb(2, 4, 109);
+  font-weight: bold;
+  border: none;
+  border-radius: 50%;
 }
 
-.card-text {
+.card-text,.card-text2 {
   font-size: x-large;
   font-weight: bold;
+  color: rgb(63, 63, 206);
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+tr {
+  display:inline-table;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 40px;
 }
 
 img {
@@ -564,12 +588,9 @@ img {
   max-width: 1200px;
 } */
 
-.poke-container {
-  grid-template-columns: 1fx 1fr 1fr 1fr;
-  grid-template-rows: 80px auto 80px; 
-  column-gap: 10px;
-  row-gap: 15px;
-}
+/* .card-home {
+  display:inline-flex;
+} */
 
 .home {
   justify-content: center;
@@ -582,6 +603,7 @@ img {
   background-color:  rgb(253, 253, 71, 0.9);
   border: none;
   margin: 2px;
+  font-family: 'Press Start 2P', cursive;
   
 }
 

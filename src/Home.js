@@ -16,14 +16,10 @@ const Home = () => {
     useEffect(()=> {
         axios.get('https://pokeapi.co/api/v2/pokemon?limit=100')
             .then(function (response) {
-                // console.log(response)
                 setPokemon(response.data.results)
                 setName(pokemonName)
-                // console.log(response.data.results)
             })
             .catch(function (error) {
-                // handle error
-                console.log(error);
             })
 
     },[pokemonName]);
@@ -32,17 +28,17 @@ const Home = () => {
     return (
         <div class="home">
         <Header />
-        <div class="poke-container">
+        <div className="card-home">
                 <ol>
                 {pokemon.map((item, index) => {
                         return (
                             <>
-                            <div class="card-home">
+                            <div class="card-body-home-namepic">
                                 <div className="card-header-home" class="card-header-home">{name}</div>
                                 <div className="card-body-home">
                                     <li key={index}> 
                                         <Link className="nameHome" to={"Details?id="+(index+1)+"&name="+item.name} details={item.url} >{item.name}</Link>
-                                        <img className="imageHome"src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/"+ (index+1) +".svg"} alt=""></img>
+                                        <img className="imageHome"src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/"+ (index+1) +".svg"} class="img-fluid" alt="Responsive" ></img>
                                     </li>
                                 </div>
                             </div>
