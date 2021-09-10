@@ -572,7 +572,13 @@ tr {
 }
 
 img {
-  padding: 10px
+  padding: 10px;
+}
+.img-fluid {
+  max-width: 250px;
+  width:100%;
+  max-height: 250px;
+  height:100%;
 }
 
 .home {
