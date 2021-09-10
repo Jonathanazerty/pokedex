@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import axios from "axios";
 
 const Leftcontainer = () => {
@@ -8,6 +9,7 @@ const Leftcontainer = () => {
     const [name, setName] = useState("");
     const [img, setImg] = useState("");
     const [id, setId] = useState(1);
+    const pokeName = new URLSearchParams(useLocation().search).get('name');
 
     let url = 'https://pokeapi.co/api/v2/pokemon/';
     // useEffect onPageLoad
@@ -16,12 +18,13 @@ const Leftcontainer = () => {
             .then(function (response) {
                 setDetails(response.data.moves)
                 setImg(response.data.sprites.other.dream_world.front_default)
+                setName(pokeName)
             })
             .catch(function (error) {
                 // handle error
                 console.log(error);
             })
-    }, [url, id]);
+    }, [url, id, pokeName]);
     console.log(details)
 
 
