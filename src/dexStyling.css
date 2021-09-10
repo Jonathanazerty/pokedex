@@ -491,7 +491,7 @@ background: #F9AEFF;
 
 @media only screen and (min-width: 1200px) {
     body {
-      background-color: rgb(110, 112, 240);
+      background-color: rgb(39, 43, 235);
     }
 }
 @media only screen and (max-width: 1199px) {
@@ -527,8 +527,8 @@ background: #F9AEFF;
 
 .header, .footer {
   font-size: x-large;
-  color:rgb(153, 1, 153);
-  text-shadow: 0 0 20px  rgb(252, 252, 4), 0 0 20px rgb(252, 252, 4);
+  color:red;
+  text-shadow: 10px 10px 10px  rgb(2, 4, 109), 10px 10px 10px rgb(2, 4, 109);
   font-family: 'Press Start 2P', cursive;
 }
 
@@ -582,8 +582,8 @@ img {
 
 .btn-outline-light {
   font-weight: bold;
-  color:rgba(255, 84, 226, 0.782);
-  background-color:  rgba(71, 211, 253, 0.501);
+  color:rgb(0, 105, 112);
+  background-color:  rgb(79, 243, 255);
   border: none;
   margin: 2px;
   font-family: 'Press Start 2P', cursive;
@@ -593,4 +593,5 @@ img {
 .btn-outline-light:hover {
   transform: scale(1.1);
   background-color:  pink;
+  color: rgb(156, 1, 27);
 }
