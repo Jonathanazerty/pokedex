@@ -101,7 +101,7 @@ const Leftcontainer = () => {
                 <div className="right-container">
                     <div className="right-container__black">
                         <div className="right-container__screen">
-                        {details.map((detail, index) => index <= 7 && <div className="list-move" >{detail.move.name}</div>)};
+                        {details.map((detail, index) => index <= 7 && <div className="list-move" >{detail.move.name}</div>)}
                         </div>
                     </div>
                     <input type="text" className="findPoke" id="findPoke" name="f"></input>
