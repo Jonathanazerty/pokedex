@@ -1,7 +1,6 @@
 # Pokédex in REACT, group-project
-
-    DEPLOYED ON NETLIFY : 
-    [Duck Duck Go](https://pokedex-dennis-jonathan.netlify.app/)
+ 
+    [DEPLOYED ON NETLIFY :](https://pokedex-dennis-jonathan.netlify.app/)
 
     Well hello there, we present to you proudly, a modern React Pokedex application ! 
     This a group project by Jonathan and myself (Dennis), learning the most important principles in React, such as Components, Hooks, States, Effects, Router-DOM etc...
