@@ -50,7 +50,7 @@ const Leftcontainer = () => {
                             <div className="main-section__white">
                                 <div className="main-section__black">
                                     <div className="card-text">
-                                        <img src={img} class="img-fluid" alt="Responsive"/>
+                                       <center><img src={img} class="img-fluid" alt="Responsive" width = "250px" height = "230px" /></center>
                                     </div>
                                     <div className="main-screen hide">
                                         <div className="screen__header">
