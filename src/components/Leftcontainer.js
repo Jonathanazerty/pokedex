@@ -1,11 +1,9 @@
 import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
 import axios from "axios";
 
 const Leftcontainer = () => {
 
    // const id = new URLSearchParams(useLocation().search).get('id');
-    const pokeName = new URLSearchParams(useLocation().search).get('name');
     const [details, setDetails] = useState([]);
     const [name, setName] = useState("");
     const [img, setImg] = useState("");
@@ -19,66 +17,27 @@ const Leftcontainer = () => {
                 console.log("response")
                 console.log(response)
                 setDetails(response.data.moves)
-                setName(pokeName)
                 setImg(response.data.sprites.other.dream_world.front_default)
-                console.log("details")
-                console.log(details)
+                //console.log("details")
+
+                console.log(response.data.moves)
 
             })
             .catch(function (error) {
                 // handle error
                 console.log(error);
             })
-    }, []);
-
-    //Name of Pokemon
-    useEffect(() => {
-        axios.get(url + id)
-            .then(function (response) {
-                console.log(response)
-                setDetails(response.data.moves)
-                setName(pokeName)
-                setImg(response.data.sprites.other.dream_world.front_default)
-                console.log(details)
-            })
-            .catch(function (error) {
-                // handle error
-                console.log(error);
-            })
-    }, [id, pokeName]);
+    }, [id]);
+    console.log(details)
 
 
     const clickHandlerForward = (j) => {
         setId(id+1);
-        /*axios.get(newUrl)
-        .then(function (response) {
-            // console.log(response)
-            setDetails(response.data.results)
-            setName(pokeName)
-            setImg(response.data.sprites.other.dream_world.front_default)
-            // console.log(response.data.results)
-        })
-        .catch(function (error) {
-            // handle error
-            console.log(error);
-        })*/
     }
 
     const clickHandlerBackward = (j) => {
         setId(id-1);
-        /*axios.get(newUrl)
-        .then(function (response) {
-            setDetails(response.data.results)
-            setName(pokeName)
-            setImg(response.data.sprites.other.dream_world.front_default)
-        })
-        .catch(function (error) {
-            console.log(error);
-        })*/
     }
-
-
-    // console.log(details)
 
     return (
         <>
@@ -148,18 +107,14 @@ const Leftcontainer = () => {
                 <div className="right-container">
                     <div className="right-container__black">
                         <div className="right-container__screen">
-                            {/* <div className="list-move">move One</div>
-                            <div className="list-move">move Two</div>
-                            <div className="list-move">move Three</div>
-                            <div className="list-move">move Four</div> */}
                             {details.map((detail, index) => {
-                                if ( index <= 4 ) {
+                                if (index <= 3) {
+                                    console.log(detail.move.name)
                                     return (
-                                    <>
-                                        <div className="list-move">{detail}</div>
-                                    </>
-                                )}
-                            })}
+                                        <div className="list-move">{detail.move.name}</div>
+                                    );
+                                }
+                            })} 
                         </div>
                         <div className="right-container__screen">
                             <div className="list-item"></div>
