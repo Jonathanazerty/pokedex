@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import { Home } from './Home';
-import { Details } from './Details';
+import { Details } from './components/Details';
 
 export {
     Home,
