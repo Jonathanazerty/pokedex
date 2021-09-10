@@ -23,7 +23,7 @@ export default function Pokedex() {
                 console.log(error);
             })
 
-    },[]);
+    },[pokemon]);
 
     return (
         <>
