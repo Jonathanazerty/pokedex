@@ -3,7 +3,7 @@
 [CLICK HERE FOR DEPLOYED NETLIFY PAGE](https://pokedex-dennis-jonathan.netlify.app/)
 
 Well hello there, we present to you proudly, a modern React Pokedex application ! 
-This a group project by Jonathan and myself (Dennis), learning the most important principles in React, such as Components, Hooks, States, Effects, Router-DOM etc...
+This a group project by Jonathan and myself (Dennis), learning the most important principles in React, such as Components, Hooks, States, Effects, React-Router-DOM etc...
 
 It was very hard to grasp, but holy moly did we have fun. 
 We highly suggest to try it yourself ! Below you find an overview on how we approached this project's structure. Enjoy !
