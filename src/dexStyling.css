@@ -421,9 +421,14 @@ display: none;
 }
 
 @media only screen and (min-width: 1200px) {
-    body {
-      background-color: rgb(39, 43, 235);
-    }
+  body {
+    background-color: rgb(39, 43, 235);
+  }
+  #headerImage
+  {
+    display: none;
+  }
+
 }
 @media only screen and (max-width: 1199px) {
   body {
@@ -454,6 +459,10 @@ display: none;
     font-size: 0.5rem;
     margin-top: 1px;
     margin: -2px;
+  }
+  #headerImage
+  {
+    display: none;
   }
 
 }
@@ -505,6 +514,11 @@ display: none;
     overflow: hidden;
     background-color:  pink;
     color: rgb(156, 1, 27);
+  }
+
+  #headerImage
+  {
+    display: block;
   }
 
 }

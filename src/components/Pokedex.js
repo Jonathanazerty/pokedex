@@ -27,7 +27,7 @@ export default function Pokedex() {
     return (
         <>
             <div className="dexHeader"><Header /></div>
-            <img src ={pokedex} className="img-fluid" alt="Responsive Pokedex letter logo"></img>
+            <img src ={pokedex} className="img-fluid" id="headerImage" alt="Responsive Pokedex letter logo"></img>
             <div className = "pokedex"><Leftcontainer /></div>
             <Footer />
 
