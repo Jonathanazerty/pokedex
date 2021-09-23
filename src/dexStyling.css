@@ -324,7 +324,7 @@ margin-bottom: 10px;
 }
 
 .right-container__screen {
-background: #43B0F2;
+background: black;
 border-radius: 15px;
 display: flex;
 flex-direction: column;
@@ -424,7 +424,7 @@ display: none;
 }
 @media only screen and (max-width: 1199px) {
     body {
-      background-color: red;
+      background-color: rgba(17, 0, 255, 0.61);
     }
 }
 
