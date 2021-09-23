@@ -336,12 +336,15 @@ margin-bottom: 5px;
 }
 
 .list-move {
-background: rgba(255, 255, 255, 0.3);
-border-radius: 25px;
+font-family: 'Press Start 2P', cursive;
+font-size: 0.6rem;
+text-align: inherit;
+color: green;
+background: transparent;
+border-style: none;
 display: block;
-margin-top: 10px;
+margin-top: 9px;
 margin-bottom: 10px;
-margin-left: 5px;
 padding: 10px;
 text-align: center;
 }
