@@ -3,6 +3,8 @@ import Header from './Header';
 import Footer from './Footer'
 import axios from 'axios';
 import Leftcontainer from './Leftcontainer';
+import pokedex from '../images/pokedex.png';
+
 
 
 export default function Pokedex() {
@@ -24,9 +26,10 @@ export default function Pokedex() {
 
     return (
         <>
-            <Header />
+            <div className="dexHeader"><Header /></div>
+            <img src ={pokedex} className="img-fluid" alt="Responsive Pokedex letter logo"></img>
             <div className = "pokedex"><Leftcontainer /></div>
-            <center><Footer /></center>
+            <Footer />
 
         </>
     )
