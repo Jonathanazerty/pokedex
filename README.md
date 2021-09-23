@@ -12,11 +12,11 @@ We highly suggest to try it yourself ! Below you find an overview on how we appr
 ## UI SCREENSHOTS
 
 <p align="center">
-    <img src="./src/images/largedex.png" alt="card" style="height: 500px; width:auto;"/><br>
-    <img src="./src/images/largehome.png" alt="card" style="height: 500px; width:auto;"/><br>
-    <img src="./src/images/mediumdex.png" alt="card" style="height: 400px; width:auto;"/><br>
-    <img src="./src/images/mobiledex.png" style="height: 350px; width:auto" alt="card";/><br>
-    <img src="./src/images/smallhome.png" alt="card" style="height: 350px; width:300px";/>
+    <img src="./src/images/largedex.png" alt="card" style="height: auto; width:auto;"/><br>
+    <img src="./src/images/largehome.png" alt="card" style="height: auto; width:auto;"/><br>
+    <img src="./src/images/mediumdex.png" alt="card" style="height: auto; width:auto;"/><br>
+    <img src="./src/images/mobiledex.png" style="height: auto; width:auto" alt="card";/><br>
+    <img src="./src/images/smallhome.png" alt="card" style="height: auto; width:300px";/>
 </p>
 <br>
 
