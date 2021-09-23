@@ -14,7 +14,9 @@ We highly suggest to try it yourself ! Below you find an overview on how we appr
 <center><img src="./src/images/largedex.png" alt="card" style="height: 500px; width:800px;"/>
 <img src="./src/images/largehome.png" alt="card" style="height: 500px; width:800px;"/></center>
 <center><img src="./src/images/mediumdex.png" alt="card" style="height: 400px; width:600px;"/></center>
-<center><img src="./src/images/mobiledex.png" style="height: 350px; width:300px; alt="card";/><img src="./src/images/smallhome.png" alt="card" style="height: 350px; width:300px";/></center>
+<center><img src="./src/images/smallhome.png" alt="card" style="height: 350px; width:300px";/>
+<img src="./src/images/cardhome.png" style="height: 350px; width:300px;" alt="card";/></center>
+<center><img src="./src/images/mobiledex.png" style="height: 350px; width:300px;" alt="card";/></center>
 <br>
 
 
