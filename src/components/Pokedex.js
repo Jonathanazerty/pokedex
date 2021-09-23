@@ -5,7 +5,6 @@ import axios from 'axios';
 import Leftcontainer from './Leftcontainer';
 import { Container } from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
-import { Col } from 'react-bootstrap';
 
 
 
