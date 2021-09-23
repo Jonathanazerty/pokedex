@@ -32,7 +32,7 @@ export default function Pokedex() {
             <center><Header /></center>
             <Container>
                 <Row>
-                    <Col><div className = "pokedex"><Leftcontainer /></div></Col>
+                    <div className = "pokedex"><Leftcontainer /></div>
                 </Row>
             </Container>
             <center><Footer /></center>
