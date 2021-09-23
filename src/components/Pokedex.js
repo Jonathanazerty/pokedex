@@ -3,9 +3,6 @@ import Header from './Header';
 import Footer from './Footer'
 import axios from 'axios';
 import Leftcontainer from './Leftcontainer';
-import { Container } from 'react-bootstrap';
-import { Row } from 'react-bootstrap';
-
 
 
 export default function Pokedex() {
@@ -27,13 +24,8 @@ export default function Pokedex() {
 
     return (
         <>
-
-            <center><Header /></center>
-            <Container>
-                <Row>
-                    <div className = "pokedex"><Leftcontainer /></div>
-                </Row>
-            </Container>
+            <Header />
+            <div className = "pokedex"><Leftcontainer /></div>
             <center><Footer /></center>
 
         </>

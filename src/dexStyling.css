@@ -440,6 +440,8 @@ display: none;
     align-items: center;
     height: 85%;
     width: 85%;
+    margin-top: -0.5%;
+    margin-right: auto;
   }
   .right-container
   {
@@ -448,13 +450,18 @@ display: none;
 
   .footer
   {
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .left-container__hinge
+  {
+    display: none;
+  }
+
+  .header
   {
     display: none;
   }
