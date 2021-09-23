@@ -48,7 +48,7 @@ const Home = () => {
                 </ol>
         </div>
         <>
-        <Footer />
+        <center><Footer /></center>
         </>
         </div>
     )

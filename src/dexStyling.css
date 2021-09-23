@@ -431,6 +431,7 @@ display: none;
 @media only screen and (max-width: 624px) {
   body {
     background-color: lightskyblue;
+    overflow: auto;
   }
   .pokedex
   {
@@ -444,7 +445,20 @@ display: none;
   {
     display: none;
   }
-  
+
+  .footer
+  {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-container__hinge
+  {
+    display: none;
+  }
+
 }
 
 /* HOME PAGE */
