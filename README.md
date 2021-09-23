@@ -8,6 +8,17 @@ This a group project by Jonathan and myself (Dennis), learning the most importan
 It was very hard to grasp, but holy moly did we have fun. 
 We highly suggest to try it yourself ! Below you find an overview on how we approached this project's structure. Enjoy !
 
+
+## UI SCREENSHOTS
+
+<center><img src="./src/images/largedex.png" alt="card" style="height: 500px; width:800px;"/>
+<img src="./src/images/largehome.png" alt="card" style="height: 500px; width:800px;"/></center>
+<center><img src="./src/images/mediumdex.png" alt="card" style="height: 400px; width:600px;"/></center>
+<center><img src="./src/images/mobiledex.png" style="height: 350px; width:300px; alt="card";/><img src="./src/images/smallhome.png" alt="card" style="height: 350px; width:300px";/></center>
+<br>
+
+
+
 ## Components & structure used
     - public 
         -- index.html ( First page to load, Bootstrap lives here)
