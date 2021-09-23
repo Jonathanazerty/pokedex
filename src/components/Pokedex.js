@@ -25,11 +25,13 @@ export default function Pokedex() {
 
     return (
         <>
-        <center><Header /></center>
-        <div className = "pokedex">
-            <Leftcontainer />
-        </div>
-        <center><Footer /></center>
+        <Container>
+            <center><Header /></center>
+            <div className = "pokedex">
+                <Leftcontainer />
+            </div>
+            <center><Footer /></center>
+        </Container>
         </>
     )
 }
