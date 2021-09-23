@@ -5,6 +5,7 @@ import axios from 'axios';
 import Leftcontainer from './Leftcontainer';
 import { Container } from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 
 
 
@@ -31,9 +32,7 @@ export default function Pokedex() {
             <center><Header /></center>
             <Container>
                 <Row>
-                    <div className = "pokedex">
-                        <Leftcontainer />
-                    </div>
+                    <Col><div className = "pokedex"><Leftcontainer /></div></Col>
                 </Row>
             </Container>
             <center><Footer /></center>

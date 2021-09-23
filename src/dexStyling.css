@@ -429,9 +429,20 @@ display: none;
 }
 
 @media only screen and (max-width: 624px) {
-    body {
-      background-color: lightskyblue;
-    }
+  body {
+    background-color: lightskyblue;
+  }
+  .pokedex
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .right-container
+  {
+    display: none;
+  }
+  
 }
 
 /* HOME PAGE */
