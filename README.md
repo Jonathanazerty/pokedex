@@ -1,6 +1,6 @@
 # Pokédex in REACT, group-project
  
-[CLICK HERE FOR DEPLOYED NETLIFY PAGE](https://pokedex-dennis-jonathan.netlify.app/)
+You can peep the deployed site [HERE](https://pokedex-dennis-jonathan.netlify.app/)
 
 Well hello there, we present to you proudly, a modern React Pokedex application ! 
 This a group project by Jonathan and myself (Dennis), learning the most important principles in React, such as Components, Hooks, States, Effects, React-Router-DOM etc...
@@ -39,7 +39,7 @@ We highly suggest to try it yourself ! Below you find an overview on how we appr
         -- dexStyling.css ( one CSS page to accompany our Bootstrap elements. 8 bit     enough for you :p ? )
 
 ## Techniques used and struggles 
-    ### Techniques :
+### Techniques :
 
     => We used React-router-DOM to switch between pages so you don't have the reload fragment between pages. Overall this creates a nice single page experience, and avoids the page to completely reload all elements.Have a look at Switch, Route and Link.  Very cool and nice  !
 
@@ -50,7 +50,7 @@ We highly suggest to try it yourself ! Below you find an overview on how we appr
 
     => useState and useEffect are our main tools to gather our data, and display accordingly . God bless JSX, which makes it possible to combine HTML elements inside of Javascript functionalities. 
 
-    ### Struggles :
+### Struggles :
 
     => This can be a long segment; so to keep it to the point : 
 
