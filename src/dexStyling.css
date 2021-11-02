@@ -469,9 +469,23 @@ display: none;
 
 @media only screen and (max-width: 624px) {
   body {
-    background-color: lightskyblue;
+    background-color: rgba(135, 206, 250, 0.363);
     overflow-x: hidden;
   }
+
+  #button-homepage, #button-pokedex {
+    background-color: rgba(17, 0, 255, 0.61);
+    color: rgb(79, 243, 255);;
+  }
+
+  #button-homepage:hover, #button-pokedex:hover {
+    background-color: rgba(17, 0, 255, 0.61);
+    color: rgb(79, 243, 255);
+    transform: scale(1.1);
+    background-color:  pink;
+    color: rgb(156, 1, 27);
+  }
+  
   .pokedex
   {
     display: flex;
@@ -490,6 +504,7 @@ display: none;
   {
     display: none;
   }
+
 
   .footer
   {
@@ -545,8 +560,12 @@ display: none;
 .header, .footer {
   font-size: x-large;
   color:red;
-  text-shadow: 10px 10px 10px  rgb(2, 4, 109), 10px 10px 10px rgb(2, 4, 109);
+  text-shadow: 10px 10px 10px  rgba(2, 4, 109, 0.11), 10px 10px 10px rgba(2, 4, 109, 0.11);
   font-family: 'Press Start 2P', cursive;
+}
+
+.header {
+  margin-top: 50px;
 }
 
 .card {
